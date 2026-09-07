@@ -154,13 +154,3 @@ h1 {
 
     transform: rotate(15deg);
 }
-
-.star {
-    font-size: 24px;
-    opacity: 0.35;
-}
-
-.star-1 {
-    top: 23%;
-    right: 17%;
-}
