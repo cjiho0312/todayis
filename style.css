@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Apple SD Gothic Neo",
+        "Noto Sans KR",
+        sans-serif;
+
+    background: #fff8fb;
+    color: #4a3941;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+button {
+    font-family: inherit;
+}
+
+.app {
+    width: 100%;
+    min-height: 100svh;
+}
+
+.screen {
+    position: relative;
+
+    width: 100%;
+    min-height: 100svh;
+
+    padding:
+        max(24px, env(safe-area-inset-top))
+        24px
+        max(32px, env(safe-area-inset-bottom))
+        24px;
+
+    overflow: hidden;
+}
+
+.start-content {
+    width: min(100%, 360px);
+
+    min-height: calc(100svh - 56px);
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.small-title {
+    margin: 0 0 18px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 0.2em;
+
+    opacity: 0.55;
+}
+
+h1 {
+    margin: 0;
+
+    font-size: 38px;
+    line-height: 1.2;
+    letter-spacing: -0.05em;
+}
+
+.description {
+    margin: 22px 0 42px;
+
+    font-size: 15px;
+    line-height: 1.8;
+
+    color: #806d75;
+}
+
+.main-button {
+    width: 100%;
+    max-width: 300px;
+
+    padding: 17px 24px;
+
+    border: none;
+    border-radius: 18px;
+
+    background: #4a3941;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 25px rgba(74, 57, 65, 0.16);
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.main-button:active {
+    transform: scale(0.96);
+
+    box-shadow:
+        0 5px 15px rgba(74, 57, 65, 0.12);
+}
+
+
+/* 장식 */
+
+.decoration {
+    position: absolute;
+
+    pointer-events: none;
+
+    user-select: none;
+}
+
+.heart {
+    font-size: 42px;
+    opacity: 0.35;
+}
+
+.heart-1 {
+    top: 15%;
+    left: 10%;
+
+    transform: rotate(-15deg);
+}
+
+.heart-2 {
+    right: 9%;
+    bottom: 18%;
+
+    font-size: 32px;
+
+    transform: rotate(15deg);
+}
+
+.star {
+    font-size: 24px;
+    opacity: 0.35;
+}
+
+.star-1 {
+    top: 23%;
+    right: 17%;
+}
